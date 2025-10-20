@@ -5,7 +5,7 @@ const Activities = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_BASE_URL = `https://${process.env.REACT_APP_CODESPACE_NAME}-8000.app.github.dev/api`;
+  const API_BASE_URL = `https://${process.env.REACT_APP_CODESPACE_NAME || 'ideal-space-adventure-r4vrq6x9qq6pfxvrr'}-8000.app.github.dev/api`;
   const API_ENDPOINT = `${API_BASE_URL}/activities/`;
 
   useEffect(() => {
